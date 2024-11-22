@@ -12,7 +12,8 @@
     width: 100%;
     border-collapse: collapse;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 10px;
+    border-color: #c4d3f6;
   }
   #tableSection {
     height: 100vh;
@@ -34,10 +35,20 @@
       background-color: #c4d3f697;
   }
   th,
-  td {
-      padding: 12px 34px;
+  td,
+  tr {
+     padding: 20px 80px 20px 30px;;
   }
-  tr th{
-      background-color: aqua;
+  th{
+    background-color: #6c7ae0;
+    color: #fff;
   }
+  .firstRow th:first-child{
+    border-radius:10px 0 0 0;
+  }
+  .firstRow th:last-child{
+    border-radius:0 10px  0 0;
+  }
+
+
   
