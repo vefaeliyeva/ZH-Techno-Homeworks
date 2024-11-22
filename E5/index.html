@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <main>
+      <div class="allForm">
+        <form action="">
+          <!-- ! First -->
+          <div class="firstSection">
+            <label for="text">Full name</label>
+            <input class="inputBox" type="text" placeholder="Full name" required minlength="3" />
+            <label for="phoneNumber">Phone Number</label>
+            <input
+              class="inputBox"
+              type="text"
+              placeholder="Enter your phone number"
+              required minlength="3"
+            />
+            <label for="email">Email Address</label>
+            <input
+              class="inputBox"
+              type="email"
+              placeholder="Enter your email"
+              required minlength="3"
+            />
+          </div>
+          <!-- ! Second -->
+          <div class="secondSection">
+            <div class="secondSecDiv">
+              <label for="data">Date</label>
+              <input class="inputBox" type="date" required/>
+            </div>
+            <div class="secondSecDiv">
+              <label for="time">Time</label>
+              <input class="inputBox" type="time" required/>
+            </div>
+          </div>
+          <!-- ! Third -->
+          <div class="thirdSection">
+            <p>Address Details</p>
+            <div class="details">
+              <input class="inputBox" type="text" placeholder="Enter area" required/>
+              <input class="inputBox" type="text" placeholder="Enter city" required />
+            </div>
+            <div class="details">
+              <input class="inputBox" type="text" placeholder="Enter state" required />
+              <input class="inputBox" type="text" placeholder="Post Code" required />
+            </div>
+            <button type="submit">Book Appointment</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

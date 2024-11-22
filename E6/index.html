@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <form action="">
+<!--!  -->
+          <div class="firstDiv">
+            <img src="./assets/Screenshot_1.png" alt="Picture" />
+          </div>
+<!--!  -->
+          <div class="secondDiv">
+            <label for="">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+              minlength="3"
+            />
+            <label for="">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+              minlength="3"
+            />
+            <label for="">Age</label>
+            <input
+              type="number"
+              id="age"
+              placeholder="Enter your age"
+              min="0"
+              max="120"
+              required
+            />
+            <label for="">Whick option best describes you?</label>
+           <select name="" id="" required>
+            <option value="" disabled selected>Describes you</option>
+            <option value="">Student</option>
+            <option value="">UX/UI Designer</option>
+            <option value="">Full Stack Developer</option>
+            <option value="">Back End Developer</option>
+            <option value="">Front End Developer</option>
+           </select>
+          </div>
+<!--!  -->
+          <div class="thirdDiv">
+            <p>Would you recomend our site to a friend??</p>
+            <label for=""><input type="radio" name="question" required/> Yes</label>
+            <label for=""><input type="radio" name="question" /> No</label>
+            <label for=""><input type="radio" name="question" /> Maybe</label>
+          </div>
+<!-- ! -->
+          <div class="fourthDiv">
+            <p>Which languages & freameworks you know?</p>
+            <label for=""><input type="checkbox" />  C</label>
+            <label for=""><input type="checkbox" />  C++</label>
+            <label for=""><input type="checkbox" />  Java</label>
+            <label for=""><input type="checkbox" />  Python</label>
+            <label for=""><input type="checkbox" />  JavaScript</label>
+            <label for=""><input type="checkbox" />  React</label>
+            <label for=""><input type="checkbox" />  Angular</label>
+            <label for=""><input type="checkbox" />  Django</label>
+            <label for=""><input type="checkbox" />  Tailwind CSS</label>
+            <label for=""><input type="checkbox" />  Bootstrap</label>
+            <div>
+              <p>Any comments or suggestions</p><br>
+              <textarea
+                name=""
+                id=""
+                placeholder="Type here..."
+                rows="10"
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 16px;
+    color: grey;
+  }
+  main {
+    background-color: #c4d3f6;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+  }
+  #tableSection {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .headerRow th{
+      color: white;
+      font-weight: 500;
+  }
+  tr {
+    border-bottom: 1px solid #f2f2f2;
+  }
+  tr:last-child{
+      border-bottom: none;
+  }
+  tr:hover{
+      background-color: #c4d3f697;
+  }
+  th,
+  td {
+      padding: 12px 34px;
+  }
+  tr th{
+      background-color: aqua;
+  }
+  
