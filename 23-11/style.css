@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bckimg{
+    height: 100vh;
+    background-image: url("./assets/cute-cats.webp");
+    background-size: cover;
+    background-repeat: no-repeat ;
+}
+.bckimg2{
+    height: 100vh;
+    background-image: url("./assets/selective-focus-closeup-shot-gray-furry-tabby-cat-sitting-wooden-chair_181624-8432_1686748977273.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+
+}
+.bckimg3{
+    height: 100vh;
+    background-image: url("./assets/51_afi_article1_the-secret-language-of-cats.webp");
+    background-repeat: no-repeat ;
+    /* background-position: ; */
+    background-size: cover;
+
+}
