@@ -1,103 +1,127 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Poppins;
 }
 .youCanContainer,
-.freelancer{
-    display: flex;
-    /* height: 100vh; */
+.freelancer {
+  display: flex;
+  height: 100vh;
 }
-.youCanLeft{
-    width: 55%;
-    background-color: #0D2836;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
+.youCanLeft {
+  width: 55%;
+  background-color: #0d2836;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
 }
 .youCanRight {
-    width: 45%;
-    background-color: #27B9A9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 45%;
+  background-color: #27b9a9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .youCanRight img {
-    max-width: 100%;
+  max-width: 100%;
 }
-.girlImage{
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.girlImage {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .youCanTitle {
-    font-size: 50px;
-    margin-bottom: 20px;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 .youCanText {
-    font-size: 16px;
-    margin-bottom: 30px;
-    color: #aaa;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #aaa;
 }
 .buttons {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 .buttons a {
-    text-decoration: none;
-    font-size: 16px;
+  text-decoration: none;
+  font-size: 16px;
 }
 .buttons .about,
-.read-more{
-    background-color: #FF5C58;
-    border: 1px solid #FF5C58;
-    color: white;
-    padding: 10px 40px;
+.read-more {
+  background-color: #ff5c58;
+  border: 1px solid #ff5c58;
+  color: white;
+  padding: 10px 40px;
 }
 .buttons .quote {
-    background-color: white;
-    color: #0D2836;
-    padding: 10px 34px;
+  background-color: white;
+  color: #0d2836;
+  padding: 10px 34px;
 }
 .buttons .about:hover,
-.read-more:hover{
-    color: #FF5C58;
-    background-color: transparent;
-    border: 1px solid #FF5C58;
+.read-more:hover {
+  color: #ff5c58;
+  background-color: transparent;
+  border: 1px solid #ff5c58;
 }
-.buttons .quote:hover{
-    color: white;
-    background-color: transparent;
-    border: 1px solid white;
+.buttons .quote:hover {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
 }
-.freelancerRight{
-    color: black;
-    padding: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.freelancerRight {
+  color: black;
+  padding: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.buttons .hire{
-    background-color: #0D2836;
-    border: 1px solid #0D2836;
-    color: white;
-    padding: 10px 40px;
+.buttons .hire {
+  background-color: #0d2836;
+  border: 1px solid #0d2836;
+  color: white;
+  padding: 10px 40px;
 }
-.buttons .hire:hover{
-    background-color: transparent;
-    color: #0D2836;
+.buttons .hire:hover {
+  background-color: transparent;
+  color: #0d2836;
 }
-.freelancerLeft{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.freelancerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.freelancerLeft img{
-    padding-left: 80px;
+.freelancerLeft img {
+  padding-left: 80px;
 }
-.freelancerTitle{
-    font-size: 32px;
+.freelancerTitle {
+  font-size: 32px;
+}
+.category {
+  height: 100vh;
+  background-color: #1cbbb4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categoryBtnImg {
+  display: flex;
+  flex-direction: column;
+}
+.categoryImg {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  border: 1px solid black;
+}
+.categoryPictures {
+  display: flex;
+  justify-content: s;
 }
