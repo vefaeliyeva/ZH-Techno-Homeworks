@@ -1,70 +1,94 @@
-/* styles.css */
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
-.container {
+.youCanContainer,
+.freelancer{
     display: flex;
     height: 100vh;
-    overflow: hidden;
 }
-
-.left-section {
+.youCanLeft{
     background-color: #0D2836;
     color: white;
-    flex: 1;
-    padding: 50px;
+    padding: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
-.right-section {
+.youCanRight {
     background-color: #27B9A9;
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.right-section img {
+.youCanRight img {
     max-width: 80%;
-    height: auto;
 }
-
-h1 {
+.youCanTitle {
     font-size: 50px;
     margin-bottom: 20px;
-    line-height: 1.2;
 }
-
-p {
+.youCanText {
     font-size: 16px;
     margin-bottom: 30px;
     color: #aaa;
 }
-
 .buttons {
     display: flex;
     gap: 15px;
 }
-
 .buttons a {
     text-decoration: none;
     font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
 }
-
-.buttons .about {
+.buttons .about,
+.read-more{
     background-color: #FF5C58;
+    border: 1px solid #FF5C58;
     color: white;
+    padding: 10px 40px;
 }
-
 .buttons .quote {
     background-color: white;
     color: #0D2836;
+    padding: 10px 34px;
+}
+.buttons .about:hover,
+.read-more:hover{
+    color: #FF5C58;
+    background-color: transparent;
+    border: 1px solid #FF5C58;
+}
+.buttons .quote:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.freelancerRight{
+    color: black;
+    padding: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.buttons .hire{
+    background-color: #0D2836;
     border: 1px solid #0D2836;
+    color: white;
+    padding: 10px 40px;
+}
+.buttons .hire:hover{
+    background-color: transparent;
+    color: #0D2836;
+}
+.freelancerLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.freelancerLeft img{
+    padding-left: 80px;
+}
+.freelancerTitle{
+    font-size: 32px;
 }
