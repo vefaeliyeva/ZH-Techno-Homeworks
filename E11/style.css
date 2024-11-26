@@ -5,24 +5,33 @@ body {
 .youCanContainer,
 .freelancer{
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .youCanLeft{
+    width: 55%;
     background-color: #0D2836;
     color: white;
-    padding: 140px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
 }
 .youCanRight {
+    width: 45%;
     background-color: #27B9A9;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .youCanRight img {
-    max-width: 80%;
+    max-width: 100%;
+}
+.girlImage{
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .youCanTitle {
     font-size: 50px;
