@@ -175,3 +175,33 @@
 width: 75%;
 margin-bottom: -50px;
 }
+.workFreeLanerContainer{
+height: 100vh;
+padding: 30px 100px;
+}
+.workFreeLanerSection{
+  display: flex;
+  flex-direction: row;
+}
+.workFreelanerLeftSide{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.workFreelanerImageDiv{
+  background-color: #0d2836;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.workFreelancerIcons{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.workFreelancerIcons span{
+
+}
