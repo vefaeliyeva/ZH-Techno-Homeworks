@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
 }
 .youCanContainer,
 .freelancer {
@@ -203,5 +203,11 @@ padding: 30px 100px;
   gap: 30px;
 }
 .workFreelancerIcons span{
-
+color: #ff5c58;
+font-size: 20px;
+font-weight: bold;
+}
+.workFreelancerIcons p{
+  font-size: 28px;
+  font-weight: bolder;
 }
