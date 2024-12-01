@@ -30,7 +30,7 @@ main {
 }
 .cardsSection img {
   width: 240px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 .cards {
   width: 33%;
