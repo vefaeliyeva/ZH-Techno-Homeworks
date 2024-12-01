@@ -29,7 +29,7 @@ main {
   padding: 20px 0px;
 }
 .cardsSection img {
-  width: 240px;
+  width: 100%;
   border-radius: 6px;
 }
 .cards {
@@ -55,3 +55,9 @@ main {
   color: white;
   font-size: 18px;
 }
+/* @media only screen and (max-width: 720px) {
+    .cardsSection{
+        display: flex;
+        flex-direction: column;
+    }
+} */
