@@ -6,36 +6,48 @@
     color: white;
     font-family: Roboto;
 }
-.firstPage{
-    background-image: url("./assets/bg_1.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.allSection{
+header{
     display: flex;
     justify-content: space-between;
+    color: white;
+    padding-top: 20px;
     align-items: center;
-    padding: 30px 140px;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
+.firstPage{
+    height: 100vh;
+    padding: 0px 140px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 800;
 }
 .navbarLinks{
     display: flex;
 }
 .navbarLinks li a{
-    padding: 0 30px;
+    color: white;
+    font-size: 15px;
+    padding: 0px 30px;
+}
+.firstPage{
+    background-image: url("./assets/bg_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .container{
-    height: 100%;
     width: 45%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
+}
+.hiThere{
+    background-color: white;
+    color: #0779E4;
+    padding: 8px 14px;
+    border-radius: 5px;
 }
 .container h1{
     font-size: 60px;
