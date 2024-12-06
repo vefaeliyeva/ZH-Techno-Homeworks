@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    padding: 0px 100px;
+}
+.topHeader{
+    background-color: #182143;
+}
+.iconsText{
+    color: white;
+}
+.topHeaderSection{
+    display: flex;
+    justify-content: space-between;
+}
+.topLeftHeader{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;    
+}
+.headerIcons{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.languageSelect{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.topRightHeader{
+    background-color: #88c417;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+select{
+    background-color: #88c417;
+    outline: transparent;
+    border: transparent;
+    color: white;
+    font-size: 16px;
+}
+.bottomHeader{
+    padding: 30px 0;
+}
+.bottomHeaderSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottomHeader nav ul{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+.bottomHeader nav ul a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #323232;
+}
+.homeSection{
+    padding: 170px 0px;
+    background-image: url("./assets/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.homeSectionBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftSideHome{
+    display: flex;
+    flex-direction: column;
+    gap:  60px;
+    color: white;
+}
+.leftSideHomeTitle{
+    font-size: 50px;
+}
+.leftSideHomeButtons{
+    display: flex;
+    gap: 14px;
+}
+.leftSideHomeButtons button, .homeFormSubmit{
+    padding: 14px 30px ;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+.leftSideHomeButtons button:first-child, .homeFormSubmit{
+    background-color: #88c417;
+}
+.leftSideHomeButtons button:nth-child(2){
+    background-color: #223060;
+}
+.homeSectionForm{
+    background-color: white;
+    padding: 55px 30px;
+    border-radius: 6px;
+}
+
+.homeSectionForm{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.moneyDayInput, .namePhone{
+    display: flex;
+    gap: 20px;
+}
+.inputD-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.homeSectionForm input{
+    padding: 15px 20px;
+    border: transparent;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
