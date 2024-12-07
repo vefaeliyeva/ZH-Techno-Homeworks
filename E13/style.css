@@ -126,3 +126,9 @@ select{
     background-color: #f6f6f6;
     border-radius: 5px;
 }
+
+.cardBoxText{
+    background-color: plum;
+    width: 200px;
+    height: 200px;
+}
