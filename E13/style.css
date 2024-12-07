@@ -66,7 +66,7 @@ select{
 }
 .homeSection{
     padding: 170px 0px;
-    background-image: url("./assets/hero-bg.jpg");
+    background-image: url("./assets/HomePage/hero-bg.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -126,9 +126,43 @@ select{
     background-color: #f6f6f6;
     border-radius: 5px;
 }
-
+.cardsSection{
+    padding: 80px 0px;
+}
+.cardSectionhead{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.cardSectionhead h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.cardsLine{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.topCardSection, .bottomCardSection{
+    display: flex;
+    gap: 30px;
+}
+.cardBox{
+    position: relative;
+}
+.cardBoxHead img{
+    position: absolute;
+    right: 40%;
+    top: -20%;
+}
 .cardBoxText{
-    background-color: plum;
-    width: 200px;
-    height: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 60px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cardBoxText h5{
+    font-size: 20px;
+    font-weight: 700;
 }
