@@ -197,3 +197,46 @@ select{
 .ourTextBox h4 {
 font-size: 24px;
 }
+.loanServices{
+    padding: 0 0 100px 0;
+}
+.servicesTitle{
+    background-color: #f6f7f9;
+    text-align: center;
+    line-height: 36px;
+    padding: 60px 0px;
+}
+.servicesTitle h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.loanServicesList{
+    display: flex;
+    height:480px;
+    color: white;
+}
+.loanServicesItem{
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: end;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.loanServicesItem:hover{
+    margin-top: 0px;
+    transition: 0.5s;
+}
+.loanServicesItem h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+.loanServicesItem a{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
