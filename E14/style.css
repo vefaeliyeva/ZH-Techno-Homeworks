@@ -12,7 +12,7 @@
   display: none;
 }
 header {
-  background-color: black;
+  background-color: aquamarine;
   padding: 30px 0px;
   position: fixed;
   width: 100%;
@@ -23,13 +23,15 @@ header nav ul {
   justify-content: space-around;
 }
 header nav ul li a {
-  color: white;
+  font-weight: 600;
+  font-size: 24px;
   padding: 8px 18px;
   border-radius: 8px;
+  color: black;
 }
 header nav ul li a:hover {
-  background-color: white;
-  color: black;
+  background-color: lightskyblue;
+  color: white;
 }
 .firstPage {
   height: 100vh;
@@ -52,6 +54,7 @@ header nav ul li a:hover {
   width: 700px;
   background-color: rgba(0, 255, 255, 0.658);
   padding: 20px;
+  text-shadow: 2px 1px 2px black;
 }
 .secondPage {
   height: 100vh;
@@ -71,7 +74,6 @@ header nav ul li a:hover {
 .thirdPage .boxes {
   height: 100vh;
   margin: 10px;
-  border: 2px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +97,7 @@ header nav ul li a:hover {
 }
 .boxes .box2 {
   background-image: url("./assets/download\ \(1\).png");
-  z-index: -7;
+  z-index: 1;
   left: 25%;
   top: 30%;
 }
@@ -113,7 +115,35 @@ header nav ul li a:hover {
 }
 .boxes .box5 {
   background-image: url("./assets/Simpsons_SO28_Gallery_11-fb0b632-300x200.jpg");
-  z-index: -5;
+  z-index: 2;
   top: 40%;
   left: 54%;
+}
+@media only screen and (max-width: 767px) {
+  header nav ul li {
+    display: none;
+  }
+  header nav ul .home {
+    display: block;
+  }
+  header nav ul li.menu {
+    display: block;
+  }
+  .firstPage {
+    height: 100vh;
+    background-image: url("./assets/marge-simpson-and-the-simpsons-family-vx1kkxpex6qfova4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .secondPage{
+    background-image: url("./assets/9bea056208cf721d154510e3b2d23c14.jpg");
+  }
+  .firstPage .container .text {
+    display: none;
+  }
+  .box {
+    position: static;
+    height: 150px;
+    width: 150px;
+  }
 }
