@@ -4,9 +4,40 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: Plus Jakarta Sans;
 }
 .container{
     padding: 0px 100px;
+}
+header{
+    width: 100%;
+    background-color: #20484f;
+    position: fixed;
+    z-index: 10;
+}
+.navbar{
+    padding: 14px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+nav ul{
+    display: flex;
+    column-gap: 70px;
+}
+nav ul a{
+    color: white;
+}
+.navBtns button{
+    margin: 8px;
+    padding: 10px 25px;
+    border-radius: 7px;
+    border: none;
+}
+.navBtns button:hover{
+    background-color: #b8e4da;
+    cursor: pointer;
+    font-weight: 800;
 }
 section{
     padding: 60px 0px;
@@ -34,10 +65,19 @@ section{
     display: flex;
     gap: 26px;
 }
+.cardOne{
+    margin: 10px;
+}
 .cardOne, .cardTwo{
     display: flex;
     column-gap: 50px;
     justify-content: center;
+}
+.cardTitle{
+    font-size: 24px;
+}
+.cardText{
+    font-size: 16px;
 }
 @media only screen and (max-width: 991px){
     .cardOne{
