@@ -7,7 +7,7 @@
     font-family: Plus Jakarta Sans;
 }
 .container{
-    padding: 0px 100px;
+    padding: 0px 120px;
 }
 header{
     width: 100%;
@@ -16,7 +16,7 @@ header{
     z-index: 10;
 }
 .navbar{
-    padding: 14px 0px;
+    padding: 22px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center ;
@@ -28,16 +28,62 @@ nav ul{
 nav ul a{
     color: white;
 }
+.navBtns{
+    display: flex;
+    gap: 20px;
+}
 .navBtns button{
-    margin: 8px;
     padding: 10px 25px;
     border-radius: 7px;
     border: none;
+    margin-right: 10px;
 }
 .navBtns button:hover{
     background-color: #b8e4da;
     cursor: pointer;
     font-weight: 800;
+}
+.menu{
+    display: none;
+}
+.homeSection{
+    display: flex;
+    column-gap: 30px;
+    padding: 100px 20px;
+    justify-content: space-between;
+}
+.homeLeftSide{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    justify-content: center;
+}
+.homeLeftSide h1{
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.homeLeftSide p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.homeBtns{
+    display: flex;
+    column-gap: 18px;
+}
+.homeBtns button{
+    padding: 16px 36px;
+    border-radius: 8px;
+    background-color: #20484F;
+    color: white;
+    border: 1px solid transparent;
+}
+.homeBtns button:hover{
+    background-color: white;
+    color: #20484F;
+    border: 1px solid #20484F;
+    cursor: pointer;
 }
 section{
     padding: 60px 0px;
@@ -84,6 +130,24 @@ section{
         flex-direction: column;
         align-items: center;
         row-gap: 30px;
+    }
+    nav, .navBtns{
+        display: none ;
+    }
+    .menu{
+        display: block;
+    }
+    .homeSection{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        text-align: center;
+    }
+    .homeBtns{
+        justify-content: center;
+    }
+    .homeLeftSide h1{
+        font-size: 40px;
     }
 }
 @media only screen and (max-width: 768px){
