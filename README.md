@@ -1,5 +1,7 @@
 # ZH-Techno-Homeworks
 
+https://quicklynet.netlify.app/
+
 https://simpsons-responsive.netlify.app/
 
 https://loanday.netlify.app/
