@@ -151,6 +151,13 @@ footer{
     padding: 5px 13px;
     border: none;
     border-radius: 6px;
+    transition: 0.15s;
+}
+.footerLeftSide form button:hover{
+    cursor: pointer;
+    background: white;
+    padding: 6px 14px;
+
 }
 .footerLeftSide form input{
     padding: 5px;
