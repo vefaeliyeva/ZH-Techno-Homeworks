@@ -125,7 +125,43 @@ section{
 .cardText{
     font-size: 16px;
 }
+footer{
+    background-color: #20484f;
+}
+.footerSection{
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    line-height: 40px;
+}
+.footerRightSide{
+    display: flex;
+    column-gap: 100px;
+}
+.quick{
+    border-top: 2px solid white;
+    padding: 24px 0px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.footerLeftSide form button{
+    background-color: #b8e4da;
+    padding: 5px 13px;
+    border: none;
+    border-radius: 6px;
+}
+.footerLeftSide form input{
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 10px;
+}
 @media only screen and (max-width: 991px){
+    .container{
+        padding: 0px 60px;
+    }
     .cardOne{
         flex-direction: column;
         align-items: center;
@@ -149,11 +185,29 @@ section{
     .homeLeftSide h1{
         font-size: 40px;
     }
+    .footerSection{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .footerLeftSide{
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+        row-gap: 10px;
+    }
+    .footerRightSide{
+        column-gap: 40px;
+        line-height: 26px;
+    }
 }
 @media only screen and (max-width: 768px){
     .cardTwo{
         flex-direction: column;
         align-items: center;
         row-gap: 30px;
+    }
+    .container{
+        padding: 0px 20px;
     }
 }
