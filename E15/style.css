@@ -1,113 +1,120 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Roboto;
 }
-.container{
-    padding: 0px 120px;
+.container {
+  padding: 0px 120px;
 }
-.menu{
-    display: none;
+.menu {
+  display: none;
 }
-header{
-    background-color: bisque;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
+header {
+  background-color: bisque;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
 }
-nav ul{
-display: flex;
-gap: 50px;
-background-color: transparent;
-padding: 10px 20px;
+nav ul {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
 }
-.logo p{
-    font-size: 30px;
-    text-shadow: 3px 3px 4px black;
+nav ul li {
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 6px;
 }
-.logo span{
-    color: #e9b949;
+nav ul li a {
+  color: black;
 }
-nav ul li:hover{
-    background-color: #e9b949;
+.logo p {
+  font-size: 30px;
+  text-shadow: 3px 3px 4px black;
 }
-.aboutSection{
-    padding: 100px 0px;
+.logo span {
+  color: #e9b949;
 }
-.aboutSectionBox{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly ;
-    padding: 52px 20px;
+nav ul li:hover {
+  background-color: #e9b949;
 }
-.aboutSection{
-    width: 100%;
-}
-.rightside{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-    align-items: start;
-}
-.rightside h1{
-    font-size: 45px;
-    font-weight: 700;
-}
-.leftside{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.leftside img{
-    border-radius: 4px;
-}
-.rightside h1::after{
-    content: "";
-    border: 3px solid #e9b949;
-    display: block;
-    width: 60px;
-}
-.aboutMeBtn{
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border-color: transparent;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.649);
-    background-color: #e9b949;
-}
-.aboutMeBtn:hover{
-    background-color: white;
-    border-color: #e9b949;
-}
-.rightside p{
-    font-size: 20px;
-}
-@media only screen and (max-width: 767px){
-    .container{
-        padding: 0px 40px;
-    }
-    .aboutSectionBox{
-        flex-direction: column;
-        gap: 50px;
-        align-items: center;
-    }
-    nav li{
-        display: none;
-    }
-    .menu{
-        display: block;
-    }
 
+
+.aboutSection, .homeSection {
+  padding: 100px 0px;
+}
+.aboutSectionBox, .homeSectionBox {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 52px 20px;
+}
+.aboutSection {
+  width: 100%;
+}
+.rightside {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  align-items: start;
+}
+.rightside h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.leftside {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.leftside img {
+  border-radius: 4px;
+}
+.rightside h1::after {
+  content: "";
+  border: 3px solid #e9b949;
+  display: block;
+  width: 60px;
+}
+.aboutMeBtn, .hireMeBtn {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: transparent;
+  background-color: #e9b949;
+}
+.aboutMeBtn:hover {
+  background-color: white;
+  border-color: #e9b949;
+}
+.rightside p {
+  font-size: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0px 40px;
+  }
+  .aboutSectionBox {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  nav li {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
 }
