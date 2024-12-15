@@ -1,91 +1,170 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: Heebo, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Heebo, sans-serif;
 }
-.container{
-    padding: 0px 104px;
+.container {
+  padding: 0px 104px;
 }
-header{
-    width: 100%;
-    background-color: #0077ff;
-    padding: 16px 0px;
-    position: fixed;
-    z-index: 50;
+/* & Header Section WEB view */
+header {
+  width: 100%;
+  background-color: #0077ff;
+  padding: 16px 0px;
+  position: fixed;
+  z-index: 50;
 }
-.menuBarContainer{
-    display: none;
+.menuBarContainer {
+  display: none;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav ul, 
-.navList{
-    display: flex;
-    align-items: center;
-    column-gap: 45px;
+nav ul,
+.navList {
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
 }
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    font-weight: 500;
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
 }
-.applyForLoan{
-    padding: 15px 30px;
-    background-color: #1a85fe;
-    border: none;
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
+.applyForLoan {
+  padding: 15px 30px;
+  background-color: #1a85fe;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
 }
-.applyForLoan:hover{
-    color: #1a85fe;
+.applyForLoan:hover {
+  color: #1a85fe;
+  background-color: white;
+  cursor: pointer;
+}
+nav ul li a::after {
+  content: "";
+  content: "";
+  border: 2px solid transparent;
+  width: 0px;
+  display: block;
+  transition: 0.35s;
+}
+nav ul li a:hover::after {
+  border: 2px solid white;
+  width: 100%;
+}
+/* & Home Section WEB-View */
+.homeSection {
+  background-image: url("./assets/h1_hero1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  display: flex;
+  align-items: center;
+  padding: 180px 0px;
+}
+.homeSectionBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.homeSectionLeftSide {
+    width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+.homeSectionLeftSide h1 {
+  color: white;
+  font-size: 62px;
+}
+.homeSectionLeftSide p {
+  color: white;
+  font-size: 18px;
+}
+.submitBtn {
+  background-color: #0bde8c;
+  color: white;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid #0bde8c;
+  cursor: pointer;
+}
+.submitBtn:hover{
     background-color: white;
-    cursor: pointer;
+    border: 2px solid #0bde8c;
+    color: #0bde8c;
 }
-nav ul li a::after{
-    content: "";
-    content: "";
-    border: 2px solid transparent;
-    width: 0px;
-    display: block;
-    transition: 0.35s;
+.homeSectionRightSide {
+  background-color: white;
+  padding: 34px 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
-nav ul li a:hover::after{
-    border: 2px solid white;
-    width: 100%;  
+.homeSectionRightSide form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.rightSideTitleText {
+  text-align: center;
+  line-height: 36px;
+}
+.rightSideTitleText h2 {
+  color: #204570;
+  font-size: 30px;
+}
+.rightSideTitleText p {
+  font-size: 14px;
+  color: #3f4854;
+}
+.select {
+  padding: 14px;
+  border: 0.5px solid #dbe2e9;
+  font-size: 14px;
+  outline: none;
+}
+form span{
+    color: #6379ff;
+    font-size: 14px;
 }
 
 
 
-
-
-
-@media only screen and (max-width: 991px){
-    .container{
-        padding: 0px 134px;
-    }
-   .navList{
+@media only screen and (max-width: 991px) {
+  /* & header */
+  .container {
+    padding: 0px 134px;
+  }
+  .navList {
     display: none;
-   } 
-   .menuBarContainer{
-       display: block;
-       padding: 0px 120px;
-       position: fixed;
-       width: 100%;
-   }
-   .menuBar{
+  }
+  .menuBarContainer {
+    display: block;
+    padding: 0px 120px;
+    position: fixed;
+    width: 100%;
+  }
+  .menuBar {
     background-color: #4c4c4c;
     display: flex;
     justify-content: end;
     padding: 10px 10px;
-   }
-   .menuBarBtn{
+  }
+  .menuBarBtn {
     font-family: sans-serif;
     background-color: black;
     color: white;
@@ -94,5 +173,36 @@ nav ul li a:hover::after{
     border: none;
     border-radius: 3px;
     padding: 6px 10px;
-   }
+  }
+  /* & home */
+  .homeSectionLeftSide{
+    gap: 20px;
+  }
+  .homeSectionLeftSide h1{
+    font-size: 32px;
+  }
+  .homeSectionRightSide h2{
+    font-size: 24px;
+  }
 }
+
+
+@media only screen and (max-width: 768px){
+.homeSection{
+    padding:110px 0px 50px 0px;
+
+}
+    .homeSectionBox{
+    flex-direction: column;
+    row-gap: 40px;
+}
+.homeSectionLeftSide{
+    padding: 16px;
+    width: 100%;
+}
+.homeSectionLeftSide h1{
+    font-size: 45px;
+}
+}
+
+
