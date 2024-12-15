@@ -1,5 +1,7 @@
 # ZH-Techno-Homeworks
 
+https://finlone-com.netlify.app/          https://zh-techno-homeworks-ia3e.vercel.app/
+
 https://grid-css-template.netlify.app/
 
 https://quicklynet.netlify.app/
