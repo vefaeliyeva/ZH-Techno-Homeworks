@@ -168,7 +168,49 @@ margin-bottom: 45px;
   width: 100%;
 }
 
+/* & Loan Section WEB-View */
+.loanSection{
+  padding: 120px 0px;
+  background-color: #f4f6f9;
+}
+.loanSectionBox{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+}
+.loanSectionTitle{
+  width: 40%;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 500;
+}
+.loanSliderBox{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
 
+.loanCardBox{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  background-color: white;
+}
+.loanCardBox h3{
+  font-size: 28px;
+  color: #204570;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+.loanCardBox p{
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.loanCardBoxText{
+  padding: 30px;
+}
 
 @media only screen and (max-width: 991px) {
   /* & header */
@@ -225,8 +267,13 @@ margin-bottom: 45px;
   .aboutSectionRightSide h1{
     font-size: 40px;
   }
-
-
+/* & loan */
+.box3{
+  display: none;
+}
+.loanSectionTitle{
+  width: 100%;
+}
 }
 
 
@@ -244,6 +291,9 @@ margin-bottom: 45px;
 }
 .homeSectionLeftSide h1{
     font-size: 45px;
+}
+.box2{
+  display: none;
 }
 }
 
