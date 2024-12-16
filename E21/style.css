@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: roboto;
+}
+header{
+    width: 100%;
+    padding: 10px;
+}
+.container{
+    padding: 0px 120px;
+    height: 100%;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    gap: 280px;
+    position: fixed;
+}
+.navBar nav ul{
+    display: flex;
+    align-items: center;
+    gap: 160px;   
+}
+.navBar nav ul a{
+    color: white;
+    position: fixed;
+}
+.navBar nav ul a:hover::after{
+    content: "";
+    display: block;
+    border: 1px solid red;
+    width: 50%;
+}
+.bg{
+    height: 100vh;
+    background-image: url("./assets/bg-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainSection{
+    height: 100%;
+}
+.mainSectionBox{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainSectionLeftSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+.mainSectionLeftSide h3{
+    font-size: 20px;
+    color: #b8860b;
+    text-decoration: line-through;
+}
+.mainSectionLeftSide h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+}
+.mainSectionLeftSide button{
+    background-color: #ab92709d;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 100;
+}
+.mainSectionLeftSide button:hover{
+    background-color: rgba(128, 128, 128, 0.603);
+}
+.mainSectionRightSide{
+    height: 100%;
+}
+.mainSectionRightSide div{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    transform: translate(100px, 70px);
+    transition: 1.5s;
+}
+.mainSectionRightSide div:hover{
+    transform: translate(100px, 170px);
+}
