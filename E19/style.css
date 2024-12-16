@@ -190,7 +190,6 @@ margin-bottom: 45px;
   align-items: center;
   column-gap: 20px;
 }
-
 .loanCardBox{
   display: flex;
   flex-direction: column;
@@ -211,6 +210,59 @@ margin-bottom: 45px;
 .loanCardBoxText{
   padding: 30px;
 }
+/* & Client Section WEB-View*/
+.testimonialSection{
+  padding-top: 120px;
+  background-image: url("./assets/section_bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+.testimonialSectionBox{
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  align-items: center;
+}
+.testimonialSectionBox h3{
+font-size: 36px;
+color: white;
+text-align: center;
+width: 85%;
+font-weight: 500  ;
+}
+.testimonialName{
+  color: white;
+  font-weight: 500;
+}
+.bottomSide{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: -7px;
+}
+.bottomSideLeft img{
+  width: 100%;
+}
+.bottomSideRight img{
+  /* margin-bottom: -7px; */
+  padding: 0;
+}
+.testimonialSection2Box{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 130px;
+}
+.bottom2SideLeft img{
+  width: 100%;
+}
+.bottom2SideRight img{
+  width: 100%;
+}
+
+
 
 @media only screen and (max-width: 991px) {
   /* & header */
@@ -274,6 +326,16 @@ margin-bottom: 45px;
 .loanSectionTitle{
   width: 100%;
 }
+/* & testimonial */
+.testimonialSectionBox h3{
+  font-size: 26px;
+}
+.testimonialSectionBox{
+  row-gap: 40px;
+}
+.testimonialSection2Box{
+  padding-bottom: 100px;
+}
 }
 
 
@@ -294,6 +356,15 @@ margin-bottom: 45px;
 }
 .box2{
   display: none;
+}
+.testimonialSectionBox h3{
+  font-size: 16px;
+}
+.testimonialSectionBox{
+  row-gap: 20px;
+}
+.testimonialSection2Box{
+  padding-bottom: 70px;
 }
 }
 
