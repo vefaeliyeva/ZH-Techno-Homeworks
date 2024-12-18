@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.animation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.planet{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: marsfirlanir 30s linear infinite;
+  }
+  .yer{
+    width: 100%;
+    border-radius: 50%;
+    animation: yerkuresi 10s linear infinite;
+  }
+  
+  .mars {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    transform: translateX(150px);
+  }
+  
+  @keyframes yerkuresi {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes marsfirlanir {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
