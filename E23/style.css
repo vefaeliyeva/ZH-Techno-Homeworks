@@ -1,0 +1,43 @@
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  animation: kvadrat 3s infinite alternate;
+}
+@keyframes kvadrat {
+  0% {
+    border-radius: 0 0 0 0;
+    background-color: blue;
+    transform: rotate(0deg);
+  }
+  25% {
+    border-radius: 0 50% 0 0;
+    background-color: red;
+    transform: rotate(45deg);
+
+  }
+  50%{
+    border-radius: 0 50% 50% 0;
+    background-color: green;
+    transform: rotate(90deg);
+
+  }
+  75% {
+    border-radius: 0 50% 50% 50%;
+    background-color: red;
+    transform: rotate(135deg);
+
+  }
+  100% {
+    border-radius: 50% 50% 50% 50%;
+    background-color: blue;
+    transform: rotate(180deg);
+
+  }
+}
