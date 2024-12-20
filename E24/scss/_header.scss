@@ -1,0 +1,21 @@
+header{
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        padding: 20px 220px;
+        li{
+            a{
+                font-size: 12px;
+                padding: 0px 8px;
+                color: black;
+            }
+            select{
+                border: none;
+                font-size: 12px;
+                padding: 0px 8px;
+            }
+        }
+    }
+}
