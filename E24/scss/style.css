@@ -88,7 +88,13 @@ header ul li select {
   padding: 0px 8px;
 }
 
-.homeSection {
+.home {
+  background-image: url("../img/header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .container .homeSection {
   padding: 230px 0px;
   display: flex;
   flex-direction: column;
@@ -96,10 +102,18 @@ header ul li select {
   justify-content: center;
   row-gap: 30px;
 }
-
-#HOME {
-  background-image: url("../img/header-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.home .container .homeSection h3 {
+  font-size: 14px;
+  font-weight: 300;
+}
+.home .container .homeSection h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.home .container .homeSection button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-image: linear-gradient(0deg, #f45622 0%, #f53e54 100%);
+  border: 1px solid transparent;
 }/*# sourceMappingURL=style.css.map */
