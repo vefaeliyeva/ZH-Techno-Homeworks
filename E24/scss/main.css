@@ -71,7 +71,13 @@ body {
   line-height: 1.5;
 }
 
+@media only screen and (max-width: 991px) {
+  .container {
+    padding: 0px 100px;
+  }
+}
 header {
+  width: 100%;
   position: fixed;
   background-color: #fff;
 }
@@ -105,8 +111,17 @@ header .headerTopSide .headerTopRight span {
   letter-spacing: 0.5px;
 }
 header .headerTopSide .iconBgColor {
-  padding: 22px 30px;
+  padding: 14px 24px;
   background-color: #f5414d;
+}
+header .headerTopSide .iconBgColor a {
+  font-size: 24px;
+  color: #fff;
+}
+header .headerTopSide .menuIcon a i {
+  display: none;
+  color: #f5414d;
+  font-size: 24px;
 }
 header hr {
   margin: 0;
@@ -132,17 +147,39 @@ header .headerBottom ul li select {
   font-size: 12px;
   padding: 0px 8px;
 }
+header .headerBottom ul li select:hover {
+  color: #f5414d;
+}
 
+@media only screen and (max-width: 991px) {
+  header hr {
+    display: none;
+  }
+  header .headerTopSide {
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  header .headerTopSide .headerTopLeft,
+  header .headerTopSide .headerTopRight {
+    display: none;
+  }
+  header .headerTopSide .menuIcon a i {
+    display: block;
+  }
+  header .headerBottom {
+    display: none;
+  }
+}
 .home {
   background-image: url("../img/header-bg.jpg");
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .home .container .homeSection {
-  padding: 180px 0px;
+  padding: 210px 0px 170px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,8 +207,17 @@ header .headerBottom ul li select {
 .home .container .homeSection button {
   font-size: 14px;
   font-weight: 600;
-  color: white;
+  color: #fff;
   background-image: linear-gradient(0deg, #f45622 0%, #f53e54 100%);
   border: 1px solid transparent;
   padding: 15px 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .home .container .homeSection h1 {
+    font-size: 35px;
+  }
+  .home .container .homeSection h1 br {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
