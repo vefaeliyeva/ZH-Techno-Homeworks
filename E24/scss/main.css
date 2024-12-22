@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -71,7 +65,53 @@ select {
   padding: 0px 135px;
 }
 
-header ul {
+body {
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  position: fixed;
+  background-color: #fff;
+}
+header .headerTopSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerTopSide .headerTopLeft {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+header .headerTopSide .headerTopLeft span {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+header .headerTopSide .headerTopCenter {
+  display: flex;
+  align-items: center;
+}
+header .headerTopSide .headerTopRight {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+header .headerTopSide .headerTopRight span {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+header .headerTopSide .iconBgColor {
+  padding: 22px 30px;
+  background-color: #f5414d;
+}
+header hr {
+  margin: 0;
+}
+header .headerBottom ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,12 +119,15 @@ header ul {
        column-gap: 10px;
   padding: 20px 220px;
 }
-header ul li a {
+header .headerBottom ul li a {
   font-size: 12px;
   padding: 0px 8px;
   color: black;
 }
-header ul li select {
+header .headerBottom ul li a:hover {
+  color: #f5414d;
+}
+header .headerBottom ul li select {
   border: none;
   font-size: 12px;
   padding: 0px 8px;
@@ -92,12 +135,14 @@ header ul li select {
 
 .home {
   background-image: url("../img/header-bg.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .home .container .homeSection {
-  padding: 230px 0px;
+  padding: 180px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,10 +152,20 @@ header ul li select {
 .home .container .homeSection h3 {
   font-size: 14px;
   font-weight: 300;
+  color: #fff;
+  letter-spacing: 3px;
+}
+.home .container .homeSection h3::after {
+  display: block;
+  margin-top: 15px;
+  content: "";
+  border: 1px solid #f5414d;
 }
 .home .container .homeSection h1 {
   font-size: 60px;
   font-weight: 700;
+  text-align: center;
+  color: #fff;
 }
 .home .container .homeSection button {
   font-size: 14px;
@@ -118,4 +173,5 @@ header ul li select {
   color: white;
   background-image: linear-gradient(0deg, #f45622 0%, #f53e54 100%);
   border: 1px solid transparent;
+  padding: 15px 30px;
 }/*# sourceMappingURL=main.css.map */
