@@ -1,0 +1,24 @@
+#HOME{
+    width: 100%;
+    background-image: url("https://preview.colorlib.com/theme/wemeet/img/banner/banner_1.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    .homeBox{
+        padding: 260px 0px;
+        @include flexBoxColumn();
+        .homeBoxTop{
+            @include flexBoxColumn();
+            h1{
+                font-size: 90px;
+                font-weight: 700;
+                color: white;
+                line-height: 100px;
+            }
+            .homeBtn{
+                @extend %primaryBtnStyle;
+            }
+        }
+    }
+}
+

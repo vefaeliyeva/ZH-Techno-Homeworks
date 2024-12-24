@@ -1,0 +1,46 @@
+header{
+    background-color: transparent;
+    .header{
+        @include flexBox();
+        padding: 15px 0px;
+        justify-content: space-between;
+        .navBar{
+            ul{
+                @include flexBox();
+                li{
+                    a{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: white;
+                        transition: color 0.5s;
+
+                        &:hover{
+                            color: #0181f5;
+                        }
+                    }
+                    select{
+                        background-color: transparent;
+                        border-color: transparent;
+                        outline: none;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 600;
+                        transition: color 0.5s;
+                        &:hover{
+                            color: #0181f5;
+                        }
+                        option{
+                            background-color: green;
+                            padding: 10px;
+                            color: black
+                        }
+                    }
+                }
+
+            }
+        }
+        .headerBtn{
+            @extend %primaryBtnStyle;
+        }
+    }
+}
