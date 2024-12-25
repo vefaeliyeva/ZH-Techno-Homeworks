@@ -5,9 +5,10 @@
     background-repeat: no-repeat;
     background-position: center;
     .homeBox{
-        padding: 260px 0px;
         @include flexBoxColumn();
+        row-gap: 150px;
         .homeBoxTop{
+            padding-top: 250px; 
             @include flexBoxColumn();
             h1{
                 font-size: 90px;
@@ -17,6 +18,37 @@
             }
             .homeBtn{
                 @extend %primaryBtnStyle;
+            }
+        }
+        .homeBoxBottom{
+            width: 100%;
+            padding-bottom: 100px;
+            @include flexBox();
+            justify-content: space-between;
+            color: white;
+            .homeBoxLocation,
+            .homeBoxCurrentData{
+                font-size: 20px;
+                font-weight: 600;
+                span{
+                    margin-left: 10px;
+                }
+            }
+            .homeBoxCurrentTime{
+                @include flexBox();
+                .timeDiv{
+                    @include flexBoxColumn();
+                    row-gap: 20px;
+                    align-items: end;
+                    h3{
+                        font-size: 46px;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
             }
         }
     }

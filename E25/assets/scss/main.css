@@ -54,7 +54,7 @@ table {
 }
 
 .container {
-  padding: 0px 80px;
+  padding: 0px 140px;
 }
 
 body {
@@ -118,7 +118,6 @@ header .header .navBar ul li select:hover {
   color: #0181f5;
 }
 header .header .navBar ul li select option {
-  background-color: green;
   padding: 10px;
   color: black;
 }
@@ -130,13 +129,14 @@ header .header .navBar ul li select option {
   background-position: center;
 }
 #HOME .homeBox {
-  padding: 260px 0px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   row-gap: 50px;
+  row-gap: 150px;
 }
 #HOME .homeBox .homeBoxTop {
+  padding-top: 250px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -147,4 +147,47 @@ header .header .navBar ul li select option {
   font-weight: 700;
   color: white;
   line-height: 100px;
+}
+#HOME .homeBox .homeBoxBottom {
+  width: 100%;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: space-between;
+  color: white;
+}
+#HOME .homeBox .homeBoxBottom .homeBoxLocation,
+#HOME .homeBox .homeBoxBottom .homeBoxCurrentData {
+  font-size: 20px;
+  font-weight: 600;
+}
+#HOME .homeBox .homeBoxBottom .homeBoxLocation span,
+#HOME .homeBox .homeBoxBottom .homeBoxCurrentData span {
+  margin-left: 10px;
+}
+#HOME .homeBox .homeBoxBottom .homeBoxCurrentTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+#HOME .homeBox .homeBoxBottom .homeBoxCurrentTime .timeDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 50px;
+  row-gap: 20px;
+  align-items: end;
+}
+#HOME .homeBox .homeBoxBottom .homeBoxCurrentTime .timeDiv h3 {
+  font-size: 46px;
+  font-weight: 600;
+}
+#HOME .homeBox .homeBoxBottom .homeBoxCurrentTime .timeDiv p {
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
