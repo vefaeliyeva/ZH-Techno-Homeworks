@@ -1,0 +1,54 @@
+#ABOUT{
+    width: 100%;
+    background-image: url("https://preview.colorlib.com/theme/wemeet/img/about/shap1.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    .aboutBox{
+        width: 100%;
+        padding: 180px 0px;
+        @include flexBox();
+        column-gap: 120px;
+        .aboutBoxLeft{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .aboutBoxRight{
+            width: 100%;
+            @include flexBoxColumn();
+            span{
+                font-size: 15px;
+                color: #c9c9c9;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            h2{
+                font-size: 46px;
+                font-weight: 500;
+                line-height: 58px;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                color: #808080;
+                line-height: 26px;
+            }
+            button{
+                font-size: 16px;
+                font-weight: 500;
+                color: red;
+                background-color: white;
+                border: 2px solid red;
+                padding: 16px 44px;
+                transition: color 1s, background-color 1s;
+                &:hover{
+                    background-color: red;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
