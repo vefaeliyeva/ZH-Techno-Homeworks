@@ -253,4 +253,51 @@ header .header .navBar ul li select option {
   background-color: red;
   color: white;
   cursor: pointer;
+}
+
+#SPEAKERS .speakersPage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 50px;
+  padding: 100px 0px;
+}
+#SPEAKERS .speakersPage .speakersTitle h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+#SPEAKERS .speakersPage .speakersCards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: space-between;
+}
+#SPEAKERS .speakersPage .speakersCards .speakersCardsSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 50px;
+}
+#SPEAKERS .speakersPage .speakersCards .speakersCardsSide .speakersCardBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 50px;
+  align-items: center;
+  row-gap: 10px !important;
+}
+#SPEAKERS .speakersPage .speakersCards .speakersCardsSide .speakersCardBox .speakersImg {
+  margin-bottom: 30px;
+}
+#SPEAKERS .speakersPage .speakersCards .speakersCardsSide .speakersCardBox .speakersName {
+  font-size: 26px;
+  font-weight: 600;
+}
+#SPEAKERS .speakersPage .speakersCards .speakersCardsSide .speakersCardBox .speakersJob {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ff0000;
 }/*# sourceMappingURL=main.css.map */

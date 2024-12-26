@@ -1,0 +1,37 @@
+#SPEAKERS{
+    .speakersPage{
+        @include flexBoxColumn();
+        padding: 100px 0px;
+        .speakersTitle{
+            h1{
+                font-size: 80px;
+                font-weight: 700;
+            }
+        }
+        .speakersCards{
+            width: 100%;
+            @include flexBox();
+            justify-content: space-between;
+            .speakersCardsSide{
+                @include flexBoxColumn();
+                .speakersCardBox{
+                    @include flexBoxColumn();
+                    align-items: center;
+                    row-gap: 10px !important;
+                    .speakersImg{
+                        margin-bottom: 30px;
+                    }
+                    .speakersName{
+                        font-size: 26px;
+                        font-weight: 600;
+                    }
+                    .speakersJob{
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #ff0000;
+                    }
+                }
+            }
+        }
+    }
+}
