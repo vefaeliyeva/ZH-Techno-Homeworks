@@ -3,7 +3,7 @@
 https://horse-club.netlify.app/
 
 https://finlone-com.netlify.app/          
-https://zh-techno-homeworks-ia3e.vercel.app/
+
 
 https://grid-css-template.netlify.app/
 
