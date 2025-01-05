@@ -247,6 +247,7 @@ body {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+    padding: 0;
   }
 }
 #SERVICES .servicesBottom .cards {
