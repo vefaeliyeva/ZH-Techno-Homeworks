@@ -1,0 +1,33 @@
+.container{
+    padding: 0px 140px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+@mixin flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+@mixin flexBoxColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+@mixin spanBox{
+    background-color: #ffa6003c;
+    color: orange;
+    padding: 10px 18px;
+    border-radius: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+@media only screen and (max-width: 991px){
+    .container{
+        padding: 0px 80px;
+    }
+}
+

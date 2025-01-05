@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  padding: 0px 140px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 991px) {
+  .container {
+    padding: 0px 80px;
+  }
+}
+#HEADER {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: space-between;
+}
+#HEADER .navbarRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+#HEADER .navbarRight nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+#HEADER .navbarRight nav ul a {
+  text-transform: capitalize;
+  color: black;
+  font-weight: 300;
+}
+#HEADER .navbarRight button {
+  background-color: navy;
+  color: orange;
+  border: 1px solid navy;
+  border-radius: 32px;
+  padding: 12px 26px;
+}
+#HEADER .navbarRight button:hover {
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
+#HEADER .menu {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  #HEADER .navbarRight {
+    display: none;
+  }
+  #HEADER .menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+#HOME {
+  padding: 80px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  width: 100%;
+}
+#HOME .homeLeft {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  align-items: flex-start;
+  row-gap: 40px;
+}
+#HOME .homeLeft span {
+  background-color: rgba(255, 166, 0, 0.2352941176);
+  color: orange;
+  padding: 10px 18px;
+  border-radius: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#HOME .homeLeft h1 {
+  color: navy;
+  font-size: 42px;
+  font-weight: 900;
+}
+#HOME .homeLeft p {
+  font-size: 18px;
+  color: grey;
+  line-height: 1.4;
+}
+#HOME .homeLeft .buttons {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+#HOME .homeLeft .buttons .how {
+  background-color: navy;
+  color: white;
+  border: 1px solid navy;
+  border-radius: 32px;
+  padding: 12px 26px;
+  text-transform: uppercase;
+}
+#HOME .homeLeft .buttons .how:hover {
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+}
+#HOME .homeLeft .buttons .contact {
+  background-color: transparent;
+  color: navy;
+  border: 1px solid navy;
+  border-radius: 32px;
+  padding: 12px 26px;
+  text-transform: uppercase;
+}
+#HOME .homeLeft .buttons .contact:hover {
+  color: white;
+  background-color: navy;
+  cursor: pointer;
+}
+#HOME .homeRight {
+  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  #HOME {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+
+#SERVICES {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  row-gap: 40px;
+}
+#SERVICES .servicesTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+#SERVICES .servicesTop span {
+  background-color: rgba(255, 166, 0, 0.2352941176);
+  color: orange;
+  padding: 10px 18px;
+  border-radius: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#SERVICES .servicesTop h2 {
+  color: navy;
+  font-size: 42px;
+  font-weight: 900;
+}
+#SERVICES .servicesBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  padding: 0px 50px;
+}
+@media only screen and (max-width: 991px) {
+  #SERVICES .servicesBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+#SERVICES .servicesBottom .cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+#SERVICES .servicesBottom .cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: flex-start;
+  padding: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.354);
+}
+#SERVICES .servicesBottom .cards .card .cardText h4 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#SERVICES .servicesBottom .cards .card .cardText p {
+  line-height: 1.4;
+  color: gray;
+}/*# sourceMappingURL=main.css.map */

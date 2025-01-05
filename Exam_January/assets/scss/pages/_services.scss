@@ -1,0 +1,45 @@
+#SERVICES{
+    padding: 80px 20px;
+    @include flexBoxColumn();
+    row-gap: 40px;
+    .servicesTop{
+        @include flexBoxColumn();
+        span{
+            @include spanBox();
+        }
+        h2{
+            color: navy;
+            font-size: 42px;
+            font-weight: 900;
+        }
+    }
+    .servicesBottom{
+        @include flexBox();
+        padding: 0px 50px;
+        @media only screen and (max-width: 991px){
+            @include flexBoxColumn();
+        }
+        .cards{
+            @include flexBoxColumn();
+            .card{
+                @include flexBox();
+                align-items: flex-start;
+                padding: 40px;
+                border: 1px solid rgba(128, 128, 128, 0.354);
+                .cardText{
+                    h4{
+                        color: black;
+                        text-transform: uppercase;
+                        font-weight: bolder;
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        line-height: 1.4;
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}
