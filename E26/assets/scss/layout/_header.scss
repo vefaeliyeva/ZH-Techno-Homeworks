@@ -1,16 +1,32 @@
-.navbar{
-    nav{
-        ul{
-            a{
-                color: white;
-                font-family: Arial;
-                font-size: 15px;
-            }
-        }
+.navbar {
+  nav {
+    ul {
+      a {
+        color: white;
+        font-family: Arial;
+        font-size: 15px;
+      }
     }
-}
-
-
-.menu{
+    @media only screen and (max-width: 991px) {
+        display: none;
+      }
+  }
+  .menu {
     display: none;
+    @media only screen and (max-width: 991px) {
+        display: block;
+      }
+  }
+  
+  button{
+    background-color: #eb2b63;
+    border-radius: 14px;
+    border: 1px solid #eb2b63;
+    color: white;
+    padding: 12px 19px;
+    @media only screen and (max-width: 991px) {
+        display: none;
+      }
+  }
+  
 }
