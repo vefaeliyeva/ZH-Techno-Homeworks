@@ -1,5 +1,4 @@
 # ZH-Techno-Homeworks
-2025 Year
 
 2024 Year
 
